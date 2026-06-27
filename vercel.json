@@ -1,5 +1,5 @@
 {
-  "buildCommand": "unzip *.zip && npm install --legacy-peer-deps && npm run build",
+  "buildCommand": "unzip zentro.zip && npm install --legacy-peer-deps && npm run build",
   "outputDirectory": "build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
