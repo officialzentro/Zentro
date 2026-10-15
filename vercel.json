@@ -1,5 +1,5 @@
 {
-  "installCommand": "for f in $(ls *.zip | sort -V); do unzip -oq \"$f\"; done && npm install --legacy-peer-deps",
+  "installCommand": "unzip -oq '*.zip' && npm install --legacy-peer-deps",
   "buildCommand": "CI=false npm run build",
   "outputDirectory": "build",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
